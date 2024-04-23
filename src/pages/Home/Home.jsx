@@ -1,12 +1,9 @@
 import React from 'react'
-import './Home.css'
-import Header from '../../components/Header/Header'
-
-
+import ImageSlider from '../../components/ImageSlider/ImageSlider'
 const Home = () => {
   return (
     <div>
-    <Header/>
+      <ImageSlider/>
     </div>
   )
 }
