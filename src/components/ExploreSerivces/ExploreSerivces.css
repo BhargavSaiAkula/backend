@@ -1,7 +1,8 @@
-explore-serivces{
+.explore-serivces{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 50px;
 }
 
 .explore-serivces h1{
@@ -9,7 +10,7 @@ explore-serivces{
     font-weight: 500;
 }
 
-explore-serivces-text{
+.explore-serivces-text{
     max-width: 60%;
     columns: #808080;
 }
@@ -35,13 +36,19 @@ display: none;
 }
 .explore-serivces-list-item p{
     margin-top: 10px;
-    color: royalblue;
+    color: tomato;
     font-size: max(1.4vw,16px);
     cursor: pointer;
+    font-size:large;
 }
 .explore-serivces hr{
     margin: 10px 0px;
     height: 2px;
     background-color: #e2e2e2;
     border: none;
+}
+
+.explore-serivces-list-item .active{
+    border: 3px solid #CCA876;
+    padding: 2px;
 }
