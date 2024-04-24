@@ -17,7 +17,7 @@ const Navbar = () => {
         <li className={menu === 'home' ? 'active' : ''} onClick={() => handleMenuClick('home')}>
           Home
         </li>
-        <li className={menu === 'Book' ? 'active' : ''} onClick={() => handleMenuClick('Book')}>
+        <li className={menu === 'Services' ? 'active' : ''} onClick={() => handleMenuClick('Services')}>
           Book
         </li>
         <li className={menu === 'Reviews' ? 'active' : ''} onClick={() => handleMenuClick('Reviews')}>
