@@ -4,10 +4,12 @@ import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart';
 import PlaceAppointment from './pages/PlaceAppointment/PlaceAppointment';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
-    <div className='app'>
+    <>
+   <div className='app'>
     <Navbar/>
      <Routes>
       <Route path="/" element={<Home/>}/>
@@ -15,23 +17,13 @@ const App = () => {
       <Route path="/appointment" element={<PlaceAppointment/>}/>
      </Routes>
     </div>
+    <Footer/>
+    </>
   )
 }
 
 export default App;
-// import React from 'react'
-// import Home from './pages/Home/Home'
 
-// const App = () => {
-//   return (
-//     <div>
-//       <Home/>
-     
-//     </div>
-//   )
-// }
-
-// export default App
 
 
 

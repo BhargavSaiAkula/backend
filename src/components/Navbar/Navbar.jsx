@@ -2,8 +2,9 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { assets } from '../../assets/assets';
+import {Link} from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState('home');
 
   const handleMenuClick = (menuItem) => {
@@ -14,21 +15,21 @@ const Navbar = () => {
     <div className='navbar'>
       <img src={assets.logo} alt='' className='logo' />
       <ul className='navbar-menu'>
-        <li className={menu === 'home' ? 'active' : ''} onClick={() => handleMenuClick('home')}>
+        <Link to='/' className={menu === 'home' ? 'active' : ''} onClick={() => handleMenuClick('home')}>
           Home
-        </li>
-        <li className={menu === 'Services' ? 'active' : ''} onClick={() => handleMenuClick('Services')}>
-          Book
-        </li>
-        <li className={menu === 'Reviews' ? 'active' : ''} onClick={() => handleMenuClick('Reviews')}>
+        </Link>
+        <a href='#explore-serivces' className={menu === 'Services' ? 'active' : ''} onClick={() => handleMenuClick('Services')}>
+          Services
+        </a>
+        {/* <a className={menu === 'Reviews' ? 'active' : ''} onClick={() => handleMenuClick('Reviews')}>
           Reviews
-        </li>
-        <li className={menu === 'mobile-app' ? 'active' : ''} onClick={() => handleMenuClick('mobile-app')}>
+        </a> */}
+        <a href='#app-download' className={menu === 'mobile-app' ? 'active' : ''} onClick={() => handleMenuClick('mobile-app')}>
           Mobile App
-        </li>
-        <li className={menu === 'Contact US' ? 'active' : ''} onClick={() => handleMenuClick('Contact US')}>
+        </a>
+        <a href='#footer' className={menu === 'Contact US' ? 'active' : ''} onClick={() => handleMenuClick('Contact US')}>
           Contact US
-        </li>
+        </a>
       </ul>
       <div className='navbar-right'>
         <img src={assets.search_icon} alt='' />
@@ -36,7 +37,7 @@ const Navbar = () => {
           <img src={assets.basket_icon} alt='' />
           <div className='dot'></div>
           <div className='signin-button'>
-            <button>Sign in</button>
+            <button onClick={()=>setShowLogin(true)}>Sign in</button>
           </div>
         </div>
       </div>
@@ -45,3 +46,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

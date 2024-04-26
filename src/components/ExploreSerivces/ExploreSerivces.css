@@ -6,7 +6,7 @@
 }
 
 .explore-serivces h1{
-    color: #CCA876;
+    color: #fee256;
     font-weight: 500;
 }
 
@@ -36,7 +36,7 @@ display: none;
 }
 .explore-serivces-list-item p{
     margin-top: 10px;
-    color: tomato;
+    color: #fc7065;
     font-size: max(1.4vw,16px);
     cursor: pointer;
     font-size:large;
@@ -49,6 +49,13 @@ display: none;
 }
 
 .explore-serivces-list-item .active{
-    border: 3px solid #CCA876;
+    border: 3px solid #fee256;
     padding: 2px;
+}
+@media(max-width:1050px){
+    .explore-serivces-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
 }
