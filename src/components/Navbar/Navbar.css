@@ -35,7 +35,7 @@
     margin-right: 5px;
   }
   
-  button {
+  .buttons {
     margin-left: 50px;
     margin-top: 5px; 
     background-color: #B89162;
@@ -78,16 +78,19 @@ button:hover{
   .navbar-right img{
     width: 22px;
   }
-  .navbar-right button{
+   .navbar-right button{
     padding: 8px 25px;
-  }
+    border-radius: 10px;
+  } 
 }
 @media (max-width:900px){
+  
   .navbar .logo{
     width: 150px;
+    margin-right: 5px;
   }
   .navbar-menu{
-    gap: 35px;
+    gap: 10px;
     font-size: 15px;
   }
   .navbar-right{
@@ -96,16 +99,24 @@ button:hover{
   .navbar-right img{
     width: 20px;
   }
-
- button{
-   padding: 40px 40px;
+  .navbar-right button{
+     padding: 10px ; 
     font-size: 15px; 
     margin-left: 5px;
+    border-radius: 10px;
+    width: 100px;
+    
   }
+  
 }
 @media (max-width:750px){
  
   .navbar-menu{
    display: none;
   }
+  .navbar-right button{
+    padding: 10px ; 
+   font-size: 15px; 
+   margin-left: 5px;   
+ }
 }

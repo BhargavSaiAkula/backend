@@ -1,0 +1,97 @@
+.title{
+    text-align: center;
+    color: #fee256;
+    font: size 15px; 
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 70p 0 30px ;
+    margin-top: 80px;
+}
+.title h2{
+     font-size: 32px;
+     color: white;
+     margin-top: 5px;
+     text-transform: none;
+}
+.shops{
+    margin: 40px auto; 
+    width: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 400px;
+    cursor: pointer;
+}
+.shop{
+    flex-basis: 31%;
+}
+
+.shop {
+    position: relative;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; 
+    padding-top: 10px;
+    text-align: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .caption img {
+    width: 100px;
+    height: 100px;
+    
+  }
+  
+  .caption p {
+    color: #000;
+  }
+  .shop:hover .caption{
+    opacity: 1;
+  }
+
+  @media (max-width:900px){
+    
+    .shop img{
+        height: 300px;
+    }
+    .caption img {
+        width: 60px;
+        height: 50px;
+      }
+
+  }
+  @media (max-width:750px){
+   .title{
+    font-size: 10px;
+    margin-top: 30px;
+   }
+   .title h2{
+    font-size:20px ;
+   }
+   .shops{
+    margin: 20px;
+   }
+    .shop img{
+        height: 200px;
+    }
+    .caption img {
+        width: 50px;
+        height: 30px;
+       
+      }
+      .caption p {
+       font-size: 10px;
+      }
+      
+  }

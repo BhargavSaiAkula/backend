@@ -1,4 +1,4 @@
-.serivce-item{
+ .serivce-item{
     width: 100%;
     margin: auto;
     border-radius: 15px;
@@ -50,8 +50,8 @@
     right: 15px;
     cursor: pointer;
      border-radius: 50%; 
- }  
- .serivce-item-counter{
+ }   
+  .serivce-item-counter{
     position:absolute;
     bottom: 15px;
     right: 15px;
@@ -62,4 +62,5 @@
     border-radius: 50px;
     background-color: white;
     color: #000;
- }
+ } 
+ 

@@ -5,6 +5,21 @@ import image1 from './image1.jpg'
 import image2 from './image2.jpg'
 import image3 from './image3.jpg'
 
+import shop1 from './shop1.jpg'
+import shop2 from './shop2.jpg'
+import shop3 from './shop3.jpg'
+
+import icon1 from './icon1.png'
+import icon2 from './icon2.png'
+import icon3 from './icon3.png'
+
+import nextIcon from './next-icon.png';
+import backIcon from './back-icon.png';
+import user1 from './user-1.png'
+import user2 from './user-2.png'
+import user3 from './user-3.png'
+import user4 from './user-4.png'
+
 import search_icon from './search_icon.png'
 import menu_1 from './haircut-women.jpg'
 import menu_2 from './hairstyling-women.jpg'
@@ -16,6 +31,8 @@ import menu_7 from './spa-woman1.jpg'
 import menu_8 from './parlours.jpg'
 
 import food_1 from './salon1.jpg'
+import food_2 from './parlours1.png'
+import food_3 from './spa.png'
 
 
 import add_icon_white from './add_icon_white.png'
@@ -56,10 +73,56 @@ export const assets = {
     logout_icon,
     bag_icon,
     parcel_icon,
+    shop1,
+    shop2,
+    shop3,
+    icon1,
+    icon2,
+    icon3,
+    nextIcon,
+    backIcon,
+    user1,
+    user2,
+    user3,
+    user4,
     
 }
 
-export const menu_list = [
+export const menu_list_women = [
+    {
+        menu_name: "Hair Cut",
+        menu_image: menu_1
+    },
+    {
+        menu_name: "Hair Styling",
+        menu_image: menu_2
+    },
+    {
+        menu_name: "Hair Color",
+        menu_image: menu_3
+    },
+    {
+        menu_name: "Facial",
+        menu_image: menu_4
+    },
+    {
+        menu_name: "Threading",
+        menu_image: menu_5
+    },
+    {
+        menu_name: "Nail Extension",
+        menu_image: menu_6
+    },
+    {
+        menu_name: "SPA",
+        menu_image: menu_7
+    },
+     {
+         menu_name: "Parlours",
+         menu_image: menu_8
+     }
+]
+export const menu_list_men = [
     {
         menu_name: "Hair Cut",
         menu_image: menu_1
@@ -94,7 +157,7 @@ export const menu_list = [
      }
 ]
 
-export const food_list = [
+export const serivce_women_list = [
     {
         _id: "1",
         shop_name: "Salon 1",
@@ -107,7 +170,7 @@ export const food_list = [
     {
         _id: "2",
         shop_name: "Spa 1",
-        image: food_1,
+        image: food_3,
         price: 250,
         location: "BTM Layout 2",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
@@ -123,7 +186,7 @@ export const food_list = [
     }, {
         _id: "4",
         shop_name: "Spa 1",
-        image: food_1,
+        image: food_3,
         price: 240,
         location: "BTM Layout 2",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
@@ -139,7 +202,7 @@ export const food_list = [
     }, {
         _id: "6",
         shop_name: "Spa 3",
-        image: food_1,
+        image: food_3,
         price: 120,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
@@ -222,7 +285,7 @@ export const food_list = [
     }, {
         _id: "16",
         shop_name: "Salon 3",
-        image: food_1,
+        image: food_2,
         price: 3500,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
@@ -238,7 +301,7 @@ export const food_list = [
     }, {
         _id: "18",
         shop_name: "Salon 4",
-        image: food_1,
+        image: food_2,
         price: 1050,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
@@ -254,10 +317,178 @@ export const food_list = [
     }, {
         _id: "20",
         shop_name: "Salon 7",
-        image: food_1,
+        image: food_2,
         price: 50,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
         category: "Parlours"
     }
 ]
+export const serivce_men_list = [
+    {
+        _id: "1",
+        shop_name: "Salon 1",
+        image: food_1,
+        price: 100,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Hair Cut"
+    },
+    {
+        _id: "2",
+        shop_name: "Spa 1",
+        image: food_3,
+        price: 250,
+        location: "BTM Layout 2",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "SPA"
+    }, {
+        _id: "3",
+        shop_name: "Salon 2",
+        image: food_1,
+        price: 150,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Hair Cut"
+    }, {
+        _id: "4",
+        shop_name: "Spa 1",
+        image: food_3,
+        price: 240,
+        location: "BTM Layout 2",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "SPA"
+    }, {
+        _id: "5",
+        shop_name: "Salon 3",
+        image: food_1,
+        price: 240,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Hair Cut"
+    }, {
+        _id: "6",
+        shop_name: "Spa 3",
+        image: food_3,
+        price: 120,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "SPA"
+    }, {
+        _id: "7",
+        shop_name: "Salon 4",
+        image: food_1,
+        price: 200,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Hair Styling"
+    }, {
+        _id: "8",
+        shop_name: "Salon 2",
+        image: food_1,
+        price: 350,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Hair Color"
+    }, {
+        _id: "9",
+        shop_name: "Salon 1",
+        image: food_1,
+        price: 200,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Hair Styling"
+    }, {
+        _id: "10",
+        shop_name: "Salon 5",
+        image: food_1,
+        price: 350,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Hair Color"
+    }, {
+        _id: "11",
+        shop_name: "Salon 1",
+        image: food_1,
+        price: 350,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Facial"
+    }, {
+        _id: "12",
+        shop_name: "Salon 7",
+        image: food_1,
+        price: 350,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Threading"
+    },
+    {
+        _id: "13",
+        shop_name: "Salon 8",
+        image: food_1,
+        price: 350,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Facial"
+    },
+    {
+        _id: "14",
+        name: "Vegan Sandwich",
+        shop_name: "Salon 4",
+        image: food_1,
+        price: 350,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Threading"
+    }, {
+        _id: "15",
+        shop_name: "Salon 7",
+        image: food_1,
+        price: 50,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Nail Extension"
+    }, {
+        _id: "16",
+        shop_name: "Salon 3",
+        image: food_2,
+        price: 3500,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Parlours"
+    }, {
+        _id: "17",
+        shop_name: "Salon 1",
+        image: food_1,
+        price: 50,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Nail Extension"
+    }, {
+        _id: "18",
+        shop_name: "Salon 4",
+        image: food_2,
+        price: 1050,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Parlours"
+    }, {
+        _id: "19",
+        shop_name: "Salon 7",
+        image: food_1,
+        price: 80,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Nail Extension"
+    }, {
+        _id: "20",
+        shop_name: "Salon 7",
+        image: food_2,
+        price: 50,
+        location: "BTM Layout 1",
+        timing:"Mon-Sun | 9:00 am - 6:00 pm",
+        category: "Parlours"
+    }
+]
+
