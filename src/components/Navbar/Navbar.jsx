@@ -25,9 +25,7 @@ const Navbar = ({setShowLogin}) => {
         <a href='#explore-serivces' className={menu === 'Services' ? 'active' : ''} onClick={() => handleMenuClick('Services')}>
           Services
         </a>
-        {/* <a className={menu === 'Reviews' ? 'active' : ''} onClick={() => handleMenuClick('Reviews')}>
-          Reviews
-        </a> */}
+        
         <a href='#app-download' className={menu === 'mobile-app' ? 'active' : ''} onClick={() => handleMenuClick('mobile-app')}>
           Mobile App
         </a>
@@ -50,4 +48,3 @@ const Navbar = ({setShowLogin}) => {
 };
 
 export default Navbar;
-

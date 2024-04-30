@@ -34,6 +34,7 @@ display: none;
     border-radius: 50%;
     transition: 0.2s;
 }
+
 .explore-serivces-list-item p{
     margin-top: 10px;
     color: #fc7065;

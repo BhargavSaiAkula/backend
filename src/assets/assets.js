@@ -15,10 +15,19 @@ import icon3 from './icon3.png'
 
 import nextIcon from './next-icon.png';
 import backIcon from './back-icon.png';
+
 import user1 from './user-1.png'
 import user2 from './user-2.png'
 import user3 from './user-3.png'
 import user4 from './user-4.png'
+
+import gallery1 from './gallery-1.png'
+import gallery2 from './gallery-2.png'
+import gallery3 from './gallery-3.png'
+import gallery4 from './gallery-4.png'
+import gallery5 from './gallery-5.png'
+import gallery6 from './gallery-6.png'
+import gallery7 from './gallery-7.png'
 
 import search_icon from './search_icon.png'
 import menu_1 from './haircut-women.jpg'
@@ -29,6 +38,16 @@ import menu_5 from './threading-women.jpg'
 import menu_6 from './nailextension-women.jpg'
 import menu_7 from './spa-woman1.jpg'
 import menu_8 from './parlours.jpg'
+
+import serivce_men1 from './Haircut-men.png'
+import serivce_men2 from './Trimming-men.png'
+import serivce_men3 from './HairColor-men.png'
+import serivce_men4 from './Facial-men.png'
+import serivce_men5 from './Head.png'
+import serivce_men6 from './gallery-7.png'
+import serivce_men7 from './SHAVING-men.png'
+import serivce_men8 from './Stylingmen.png'
+
 
 import food_1 from './salon1.jpg'
 import food_2 from './parlours1.png'
@@ -85,7 +104,13 @@ export const assets = {
     user2,
     user3,
     user4,
-    
+    gallery1,
+    gallery2,
+    gallery3,
+    gallery4,
+    gallery5,
+    gallery6,
+    gallery7,
 }
 
 export const menu_list_women = [
@@ -124,37 +149,37 @@ export const menu_list_women = [
 ]
 export const menu_list_men = [
     {
-        menu_name: "Hair Cut",
-        menu_image: menu_1
+        menu_name: "HairCut",
+        menu_image: serivce_men1
     },
     {
-        menu_name: "Hair Styling",
-        menu_image: menu_2
+        menu_name: "Trimming",
+        menu_image: serivce_men2
     },
     {
-        menu_name: "Hair Color",
-        menu_image: menu_3
+        menu_name: "HairColor",
+        menu_image: serivce_men3
     },
     {
-        menu_name: "Facial",
-        menu_image: menu_4
+        menu_name: "Facial Men",
+        menu_image: serivce_men4
     },
     {
-        menu_name: "Threading",
-        menu_image: menu_5
+        menu_name: "Head Massage",
+        menu_image: serivce_men5
     },
     {
-        menu_name: "Nail Extension",
-        menu_image: menu_6
+        menu_name: "Body Spa",
+        menu_image: serivce_men6
     },
     {
-        menu_name: "SPA",
-        menu_image: menu_7
+        menu_name: "Shaving",
+        menu_image: serivce_men7
     },
-     {
-         menu_name: "Parlours",
-         menu_image: menu_8
-     }
+    {
+        menu_name: "HairStyling",
+        menu_image: serivce_men8
+    }
 ]
 
 export const serivce_women_list = [
