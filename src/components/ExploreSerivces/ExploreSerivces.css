@@ -28,11 +28,43 @@
 display: none;
 }
 .explore-serivces-list-item img{
-    width: 7.5vw;
+    /* width: 7.5vw; */
+    width: 130px;
+    height:130px;
     min-width: 80px;
     cursor: pointer;
-    border-radius: 50%;
     transition: 0.2s;
+    border-radius: 50%;
+}
+.explore-serivces-list-men{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+
+}
+.explore-serivces-list-men::-webkit-scrollbar{
+    display: none;
+    }
+.explore-serivces-list-item-men img{
+    width: 130px;
+    height:130px;
+    border-radius: 50%;
+    
+}
+.explore-serivces-list-item-men .active{
+    border: 3px solid #fee256;
+    padding: 2px;
+}
+.explore-serivces-list-item-men p{
+    margin-top: 10px;
+    color: #fc7065;
+    font-size: max(1.2vw,16px);
+    cursor: pointer;
+    font-size:large;
 }
 
 .explore-serivces-list-item p{
@@ -66,3 +98,6 @@ display: none;
     }
 
 } 
+.heading{
+ color: royalblue;
+}

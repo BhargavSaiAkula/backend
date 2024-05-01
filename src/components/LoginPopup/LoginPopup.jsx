@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 const LoginPopup = ({setShowLogin}) => {
  
   const[currstate,setCurrstate] = useState("Login")
-
+  
   return (
     <div className='login-popup'>
          <form className='login-popup-container'>

@@ -7,7 +7,7 @@ const Shop = () => {
     <>
     <div className='title'>
     <p>Find Near By Services Shop</p>
-    <h2>Book Your Appiontment</h2>
+    <h2>Book Your Appointment</h2>
 
     </div>
     <div className='shops'>

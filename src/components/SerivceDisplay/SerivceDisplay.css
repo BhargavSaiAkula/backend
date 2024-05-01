@@ -14,3 +14,36 @@
   gap: 30px;
   row-gap: 50px;
 }
+.search-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: #0F1C2A;
+  padding: 40px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-inputs input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 25%;
+  
+}
+
+.search-inputs button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  width: 25%;
+}
+
+.search-inputs button:hover {
+  background-color: #0056b3;
+}

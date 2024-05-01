@@ -10,6 +10,8 @@ import LoginPopup from './components/LoginPopup/LoginPopup';
 const App = () => {
  
   const[showLogin,setShowLogin] = useState(false)
+   console.log("i am in app");
+   console.log(showLogin);
 
   return (
     <>

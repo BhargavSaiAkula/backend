@@ -64,3 +64,54 @@
     color: #000;
  } 
  
+/* .add-btn{
+   width: 35px; 
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+     border-radius: 50%;
+     align-items: end;
+     
+}
+.serivce-item-counter-btn{
+    bottom: 15px;
+    right: 15px;
+    display:flex;
+    width: 110px;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+    color: #000;
+} */
+.serivce-item-footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   bottom: 15px;
+   right: 15px;
+}
+
+.serivce-item-desc,
+.serivce-item-price,
+.serivce-item-counter-btn {
+   margin: 0;
+}
+
+.add-btn {
+   width: 35px;
+   cursor: pointer;
+   border-radius: 50%;
+}
+
+.serivce-item-counter-btn {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 6px;
+   border-radius: 50px;
+   background-color: white;
+   color: #000;
+}
