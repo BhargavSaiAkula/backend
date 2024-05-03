@@ -23,7 +23,7 @@ const Reviews = () => {
 
   return (
     <>
-      <div className='title'>
+      <div className='title' id='Reviews'>
         <p>Testimonials</p>
         <hr />
         <h2>What Our Clients Say!</h2>

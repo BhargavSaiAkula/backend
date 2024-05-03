@@ -26,10 +26,10 @@ const Navbar = ({setShowLogin}) => {
           Services
         </a>
         
-        <a href='#app-download' className={menu === 'mobile-app' ? 'active' : ''} onClick={() => handleMenuClick('mobile-app')}>
-          Mobile App
+        <a href='#Reviews' className={menu === 'mobile-app' ? 'active' : ''} onClick={() => handleMenuClick('mobile-app')}>
+          Reviews
         </a>
-        <a href='#footer' className={menu === 'Contact US' ? 'active' : ''} onClick={() => handleMenuClick('Contact US')}>
+        <a href='#Contact-us' className={menu === 'Contact US' ? 'active' : ''} onClick={() => handleMenuClick('Contact US')}>
           Contact US
         </a>
       </ul>

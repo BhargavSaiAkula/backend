@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@feuer/react-tabs": "^0.1.8",
+    "@mui/material": "^5.15.16",
     "react": "^18.2.0",
     "react-datepicker": "^6.9.0",
     "react-dom": "^18.2.0",

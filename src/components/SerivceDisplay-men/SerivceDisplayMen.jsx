@@ -1,12 +1,13 @@
-
+   
 import React, { useState } from 'react';
-import './SerivceDisplay.css';
+import './SerivceDisplayMan.css'
+
 import { useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';
 import SerivceItem from '../SerivceItem/SerivceItem';
 
-const SerivceDisplay = ({ category }) => {
-  const { serivce_women_list } = useContext(StoreContext);
+const SerivceDisplayMen = ({ category }) => {
+  const { serivce_men_list } = useContext(StoreContext);
   const [searchLocation, setSearchLocation] = useState('');
   const [searchShopName, setSearchShopName] = useState('');
 
@@ -15,7 +16,7 @@ const SerivceDisplay = ({ category }) => {
     console.log('Search shop name:', searchShopName);
   };
 
-  const filteredServices = serivce_women_list.filter(item => {
+  const filteredServices = serivce_men_list.filter(item => {
       const locationMatch = item.location.toLowerCase().includes(searchLocation.toLowerCase());
       const shopNameMatch = item.shop_name.toLowerCase().includes(searchShopName.toLowerCase());
       const categoryMatch = category === 'All' || category === item.category;
@@ -66,4 +67,5 @@ const SerivceDisplay = ({ category }) => {
   );
 };
 
-export default SerivceDisplay;
+
+export default SerivceDisplayMen

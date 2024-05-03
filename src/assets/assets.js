@@ -29,6 +29,12 @@ import gallery5 from './gallery-5.png'
 import gallery6 from './gallery-6.png'
 import gallery7 from './gallery-7.png'
 
+import Msgicon from './msg-icon.png'
+import Mailicon from './mail-icon.png'
+import Phoneicon from './phone-icon.png'
+import Location_icon from './location-icon.png'
+import White_arrow from './white-arrow.png'
+
 import search_icon from './search_icon.png'
 import menu_1 from './haircut-women.jpg'
 import menu_2 from './hairstyling-women.jpg'
@@ -111,6 +117,11 @@ export const assets = {
     gallery5,
     gallery6,
     gallery7,
+    Msgicon,
+    Mailicon,
+    Phoneicon,
+    Location_icon,
+    White_arrow,
 }
 
 export const menu_list_women = [
@@ -357,7 +368,7 @@ export const serivce_men_list = [
         price: 100,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Hair Cut"
+        category: "HairCut"
     },
     {
         _id: "2",
@@ -366,7 +377,7 @@ export const serivce_men_list = [
         price: 250,
         location: "BTM Layout 2",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "SPA"
+        category: "Shaving"
     }, {
         _id: "3",
         shop_name: "Salon 2",
@@ -374,7 +385,7 @@ export const serivce_men_list = [
         price: 150,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Hair Cut"
+        category: "HairCut"
     }, {
         _id: "4",
         shop_name: "Spa 1",
@@ -382,7 +393,7 @@ export const serivce_men_list = [
         price: 240,
         location: "BTM Layout 2",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "SPA"
+        category: "Shaving"
     }, {
         _id: "5",
         shop_name: "Salon 3",
@@ -390,7 +401,7 @@ export const serivce_men_list = [
         price: 240,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Hair Cut"
+        category: "HairCut"
     }, {
         _id: "6",
         shop_name: "Spa 3",
@@ -398,7 +409,7 @@ export const serivce_men_list = [
         price: 120,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "SPA"
+        category: "Shaving"
     }, {
         _id: "7",
         shop_name: "Salon 4",
@@ -406,7 +417,7 @@ export const serivce_men_list = [
         price: 200,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Hair Styling"
+        category: "Trimming"
     }, {
         _id: "8",
         shop_name: "Salon 2",
@@ -414,7 +425,7 @@ export const serivce_men_list = [
         price: 350,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Hair Color"
+        category: "HairColor"
     }, {
         _id: "9",
         shop_name: "Salon 1",
@@ -422,7 +433,7 @@ export const serivce_men_list = [
         price: 200,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Hair Styling"
+        category: "Trimming"
     }, {
         _id: "10",
         shop_name: "Salon 5",
@@ -430,7 +441,7 @@ export const serivce_men_list = [
         price: 350,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Hair Color"
+        category: "HairColor"
     }, {
         _id: "11",
         shop_name: "Salon 1",
@@ -438,7 +449,7 @@ export const serivce_men_list = [
         price: 350,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Facial"
+        category: "Facial Men"
     }, {
         _id: "12",
         shop_name: "Salon 7",
@@ -446,7 +457,7 @@ export const serivce_men_list = [
         price: 350,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Threading"
+        category: "Head Massage"
     },
     {
         _id: "13",
@@ -455,7 +466,7 @@ export const serivce_men_list = [
         price: 350,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Facial"
+        category: "Facial Men"
     },
     {
         _id: "14",
@@ -465,15 +476,15 @@ export const serivce_men_list = [
         price: 350,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Threading"
+        category: "Head Massage"
     }, {
         _id: "15",
         shop_name: "Salon 7",
         image: food_1,
-        price: 50,
+        price: 350,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Nail Extension"
+        category: "Body Spa"
     }, {
         _id: "16",
         shop_name: "Salon 3",
@@ -486,10 +497,10 @@ export const serivce_men_list = [
         _id: "17",
         shop_name: "Salon 1",
         image: food_1,
-        price: 50,
+        price: 450,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Nail Extension"
+        category: "Body Spa"
     }, {
         _id: "18",
         shop_name: "Salon 4",
@@ -497,7 +508,7 @@ export const serivce_men_list = [
         price: 1050,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Parlours"
+        category: "HairStyling"
     }, {
         _id: "19",
         shop_name: "Salon 7",
@@ -505,7 +516,7 @@ export const serivce_men_list = [
         price: 80,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Nail Extension"
+        category: "HairStyling"
     }, {
         _id: "20",
         shop_name: "Salon 7",
@@ -513,7 +524,7 @@ export const serivce_men_list = [
         price: 50,
         location: "BTM Layout 1",
         timing:"Mon-Sun | 9:00 am - 6:00 pm",
-        category: "Parlours"
+        category: "HairStylings"
     }
 ]
 
