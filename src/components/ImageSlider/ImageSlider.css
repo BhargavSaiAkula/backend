@@ -1,0 +1,54 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 80vh;
+}
+
+@media (max-width:1050px){
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 80vh;
+  }
+}
+@media (max-width:900px){
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 70vh;
+  }
+}
+@media (max-width:750px){
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 30vh;
+    
+  }
+}
